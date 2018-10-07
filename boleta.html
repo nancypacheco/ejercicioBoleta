@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>FORULARIO DE PEDIDO</title>
+</head>
+<BODY>
+	<H2><b>INDUSTRIAS STARTFUERTE</b></H2>
+	<form>
+		<fieldset> <!permite agrupar un conjunto de controles dentro d euna caja con borde->
+			<legend>FORMULARIO DE PEDIDO</legend> <!Pone titulo al fiedset-->
+
+			<table>
+				<tr>
+					<td> > <b>Paso 1. Identificaciòn</b></td>
+				</tr>
+
+				<tr>
+					<td>
+						<br>	<fieldset>
+							<legend>Datos del cliente</legend>
+							<br>
+							<label>Correo Electrònico</label><input type="email"></input>
+							<br><br>
+							<label>Contraseña</label><input type="password"></input>
+							<br><br>
+							(Longitud mìnima 6 caràcteres)
+
+						</fieldset>
+					</td>
+					<td>
+						<fieldset>
+							<legend>Tipo de Cliente</legend>
+							<br>
+							<input type="radio" name="Cliente"=checked="true">Particular</input><br>
+							<input type="radio" name="Cliente"=checked="true">Asociaciòn</input><br>
+							<input type="radio" name="Cliente"=checked="true">Empresa</input><br><br>
+
+						</fieldset>
+					</td>
+					<tr>	
+						<td> > <b>Paso 2. Pedido</b></td>
+					</tr>
+					<tr>
+						<td>
+							<fieldset>
+								<legend>Datos del Producto</legend>
+								Producto
+								<br>
+								<select  name="Producto" size="10" multiple="true">
+									<optgroup label="Armaduras">
+										<option selected="selected">AROO1 Oro Reluciente</option>
+										<option >AROO2 Plata Pulida</option>
+										<option>AROO3 Bronce Reforzado</option>
+									</optgroup>
+									<optgroup label="Extras">
+										<option selected="selected">EXOO1 Escudo</option>
+										<option>EXOO2 Invisibilidad</option>
+									</optgroup>
+
+								</select>
+
+							</fieldset>
+
+						</td>
+
+
+						<td>
+
+							<fieldset>
+								<legend>Informaciòn de Interès</legend>
+								<br>
+								Comentarios<br>
+								<textarea  cows="10" rows="5" >Escriba aquí sus comentarios</textarea><br>
+								<input type="checkbox" name="caja"  /> Acepto recibir informaciòn publicitaria </input>
+
+							</fieldset>
+						</td>
+					</tr>
+
+					
+					
+					<tr>
+						<td>
+							<br>
+							<fieldset>
+
+								<legend>Datos de Envìo</legend><br>
+								<br><label>Direcciòn</label>
+								<input type="text" name="direcciòn">
+								<br>
+								<label>Ciudad</label><input type="text" name="Ciudad"<label>Còdigo</label>
+								<label>Postal</label><input type="text" name="Postal">
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<td><br>
+
+							<input  type="submit" size="1" value="ENVIAR PEDIDsssssO"  style="white-space:pre"/>
+                             <button type="submit">ENVIAR<br />PEDIDO</button>
+						</td>
+					</tr>
+
+
+
+
+
+
+
+				</tr>
+
+			</table>
+		</fieldset>
+	</form>
+</BODY>
