@@ -11,6 +11,8 @@
 			<legend>FORMULARIO DE PEDIDO</legend> <!Pone titulo al fiedset-->
 
 			<table>
+				<!--Se utiliza<tr> para las FILAS Y cierras dondetermina el nùmero de columnas a usar
+					ejenplo DESDE DATOS DEL CLIENTE HASTA el ùltimo texto de tipo de cliente-->
 				<tr>
 					<td> > <b>Paso 1. Identificaciòn</b></td>
 				</tr>
@@ -41,12 +43,15 @@
 					<tr>	
 						<td> > <b>Paso 2. Pedido</b></td>
 					</tr>
+					<!--Se utiliza<tr> para las FILAS Y cierras donde termina el nùmero de columnas a usar
+					ejenplo DESDE DATOS DEL PRODUCTO HASTA acepto recibir informaciòn publicitaria-->
 					<tr>
 						<td>
 							<fieldset>
 								<legend>Datos del Producto</legend>
 								Producto
 								<br>
+								<!--Se usa <select name---- para dar tamaño sice y seleccinar varias option-->
 								<select  name="Producto" size="10" multiple="true">
 									<optgroup label="Armaduras">
 										<option selected="selected">AROO1 Oro Reluciente</option>
@@ -86,30 +91,56 @@
 							<fieldset>
 
 								<legend>Datos de Envìo</legend><br>
-								<br><label>Direcciòn</label>
-								<input type="text" name="direcciòn">
+								<br><label>Direcciòn</label><br><input type="text" name="direcciòn">
 								<br>
-								<label>Ciudad</label><input type="text" name="Ciudad"<label>Còdigo</label>
-								<label>Postal</label><input type="text" name="Postal">
+								<label>Ciudad</label><input type="text" name="Ciudad"<label>Còdigo</label><br>
+
+								<label>Postal</label><input type="text" name="Postal" sice=20">
 							</fieldset>
 						</td>
-					</tr>
-					<tr>
-						<td><br>
+					
+					
+						
 
-							<input  type="submit" size="1" value="ENVIAR PEDIDsssssO"  style="white-space:pre"/>
-							<!-- usamos button para poder dividir en dos lineas el texto dentro del botón  -->
+						<td>
+
+							<fieldset>
+								<br>
+								<legend>Datos Bancarios</legend>
+
+								<!--Se pone un <br>entre label y input para poner un nombre y una casilla-->
+								<label>Nombre de la entidad</label><br><input type="text" name="nombre de la entidad">
+								<br>
+								
+								<label>Nº de cuenta</label><br><input type="text" name="nùmero de cuenta">
+								
+								
+							</fieldset>
+						</td>
+						</tr>
+
+						<tr>
+						<td><br>
+						</tr>
+						<tr>
+							<td>
+
+							
+							<!-- usamos button para poder dividir y escribir en dos lineas un texto dentro del botón con una determinada funciòn  -->
 							<button type="submit">ENVIAR<br />PEDIDO</button>
 						</td>
+					
+						
+						<td>
+							<!--Se usa RESET Y VALUE para escribir dentro del botòn-->
+							<input type="RESET" value="RESET"></input>
+						</td>
+					
+
+
+
 					</tr>
 
-
-
-
-
-
-
-				</tr>
 
 			</table>
 		</fieldset>
